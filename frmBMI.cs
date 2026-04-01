@@ -19,12 +19,10 @@ namespace BMI計算機
 
         private void btnRun_Click(object sender, EventArgs e)
         {   
-            // 取得資料
             bool isHeightValid = double.TryParse(this.txtHeight.Text, out double heightCM);
             bool isWeightValid = double.TryParse(this.txtWeight.Text, out double weight);
             int age = (int)this.numAge.Value;
 
-            // 驗證資料
             if (isHeightValid)//身高有效
             {
                 if (heightCM <= 0) {
@@ -51,10 +49,22 @@ namespace BMI計算機
                 MessageBox.Show("請輸入有效的體重數值。", "體重值錯誤", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
-            
+                   
             double heightM = heightCM / 100; // 將身高從公分轉換為公尺
 
-            double bmi = weight / (heightM * heightM); // BMI計算公式：體重(kg)/身高(m)^2
+            double bmi = weight / (heightM * heightM); // BMI 計算公式：體重(kg) / 身高(m)^2
+
+            double idealWeight = 22 * (heightM * heightM); // 理想體重計算公式：22 * 身高(m)^2，22 是一般認為的理想 BMI值
+
+            double bmr = 0;
+            if (rdoMale.Checked)
+            {
+                bmr = (10 * weight) + (6.25 * heightCM) - (5 * age) + 5; // 男性 BMR 計算公式：10 * 體重(kg) + 6.25 * 身高(cm) - 5 * 年齡 + 5
+            }
+            else
+            {
+                bmr = (10 * weight) + (6.25 * heightCM) - (5 * age) - 161; // 女性 BMR 計算公式：10 * 體重(kg) + 6.25 * 身高(cm) - 5 * 年齡 - 161
+            }
 
             string[] strResultList = { "體重過輕", "健康體位", "體位過重", "輕度肥胖", "中度肥胖", "重度肥胖" };
             Color[] colorList = {
@@ -81,22 +91,10 @@ namespace BMI計算機
 
             lblResult.Text = $"{bmi:F2} ({strResult})";
             lblResult.BackColor = colorResult;
-            lblResult.Font = new Font(lblResult.Font, FontStyle.Bold); // 加粗字體
+            lblResult.Font = new Font(lblResult.Font, FontStyle.Bold); //加粗字體
 
-            double idealWeight = 22 * (heightM * heightM); // 理想體重計算公式：22*身高(m)^2，22是一般認為的理想 BMI值
-            lblIdeal.Text = $"理想體重 : {idealWeight:F1} kg";
-
-            // BMR
-            double bmr = 0;
-            if (rdoMale.Checked)
-            {
-                bmr = (10 * weight) + (6.25 * heightCM) - (5 * age) + 5; // 男性BMR計算公式：10*體重(kg)+6.25*身高(cm)-5*年齡+5
-            }
-            else
-            {
-                bmr = (10 * weight) + (6.25 * heightCM) - (5 * age) - 161; // 女性BMR計算公式：10*體重(kg)+6.25*身高(cm)-5*年齡-161
-            }
             lblBMR.Text = $"基礎代謝率 (BMR) : {bmr:F0} kcal";
+            lblIdeal.Text = $"理想體重 : {idealWeight:F1} kg";
 
             // 根據 BMI 結果給予建議
             double diff = weight - idealWeight;
@@ -116,9 +114,15 @@ namespace BMI計算機
             // 取得當前的基準顏色
             Color baseColor = colorList[resultIndex];
 
+            // 設定半透明度，建議 100~150 之間，既有顏色又不會太重
+            int opacity = 120;
+
             // 重新合成半透明色並套用到 GroupBox
-            grpOutput.BackColor = Color.FromArgb(80, baseColor);
-            grpInput.BackColor = Color.FromArgb(80, baseColor);
+            grpInput.BackColor = Color.FromArgb(opacity, baseColor);
+
+            // 為了讓文字在半透明背景下依然清晰，建議將 ForeColor 設為深灰色或黑色
+            // 或者如果背景還是偏深，就維持白色
+            grpInput.ForeColor = Color.Black;
         }
 
 

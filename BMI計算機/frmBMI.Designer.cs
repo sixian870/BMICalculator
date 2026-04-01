@@ -29,25 +29,25 @@
         private void InitializeComponent()
         {
             this.grpInput = new System.Windows.Forms.GroupBox();
+            this.numAge = new System.Windows.Forms.NumericUpDown();
+            this.lblAge = new System.Windows.Forms.Label();
+            this.lblGender = new System.Windows.Forms.Label();
+            this.rdoFemale = new System.Windows.Forms.RadioButton();
+            this.rdoMale = new System.Windows.Forms.RadioButton();
             this.txtWeight = new System.Windows.Forms.TextBox();
             this.txtHeight = new System.Windows.Forms.TextBox();
             this.btnRun = new System.Windows.Forms.Button();
             this.lblWeight = new System.Windows.Forms.Label();
             this.lblHeight = new System.Windows.Forms.Label();
             this.grpOutput = new System.Windows.Forms.GroupBox();
+            this.lblAdvice = new System.Windows.Forms.Label();
+            this.lblIdeal = new System.Windows.Forms.Label();
+            this.lblBMR = new System.Windows.Forms.Label();
             this.lblResult = new System.Windows.Forms.Label();
             this.lblBMI = new System.Windows.Forms.Label();
-            this.rdoMale = new System.Windows.Forms.RadioButton();
-            this.rdoFemale = new System.Windows.Forms.RadioButton();
-            this.lblGender = new System.Windows.Forms.Label();
-            this.lblAge = new System.Windows.Forms.Label();
-            this.lblBMR = new System.Windows.Forms.Label();
-            this.lblIdeal = new System.Windows.Forms.Label();
-            this.numAge = new System.Windows.Forms.NumericUpDown();
-            this.lblAdvice = new System.Windows.Forms.Label();
             this.grpInput.SuspendLayout();
-            this.grpOutput.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numAge)).BeginInit();
+            this.grpOutput.SuspendLayout();
             this.SuspendLayout();
             // 
             // grpInput
@@ -70,6 +70,76 @@
             this.grpInput.TabIndex = 0;
             this.grpInput.TabStop = false;
             this.grpInput.Text = "資料輸入";
+            // 
+            // numAge
+            // 
+            this.numAge.Location = new System.Drawing.Point(337, 46);
+            this.numAge.Maximum = new decimal(new int[] {
+            140,
+            0,
+            0,
+            0});
+            this.numAge.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numAge.Name = "numAge";
+            this.numAge.Size = new System.Drawing.Size(114, 34);
+            this.numAge.TabIndex = 9;
+            this.numAge.Value = new decimal(new int[] {
+            20,
+            0,
+            0,
+            0});
+            // 
+            // lblAge
+            // 
+            this.lblAge.AutoSize = true;
+            this.lblAge.BackColor = System.Drawing.Color.Transparent;
+            this.lblAge.Font = new System.Drawing.Font("微軟正黑體", 12F);
+            this.lblAge.Location = new System.Drawing.Point(263, 48);
+            this.lblAge.Name = "lblAge";
+            this.lblAge.Size = new System.Drawing.Size(61, 30);
+            this.lblAge.TabIndex = 8;
+            this.lblAge.Text = "年齡";
+            // 
+            // lblGender
+            // 
+            this.lblGender.AutoSize = true;
+            this.lblGender.BackColor = System.Drawing.Color.Transparent;
+            this.lblGender.Font = new System.Drawing.Font("微軟正黑體", 12F);
+            this.lblGender.Location = new System.Drawing.Point(37, 48);
+            this.lblGender.Name = "lblGender";
+            this.lblGender.Size = new System.Drawing.Size(61, 30);
+            this.lblGender.TabIndex = 7;
+            this.lblGender.Text = "性別";
+            // 
+            // rdoFemale
+            // 
+            this.rdoFemale.AutoSize = true;
+            this.rdoFemale.BackColor = System.Drawing.Color.Transparent;
+            this.rdoFemale.Font = new System.Drawing.Font("微軟正黑體", 10F);
+            this.rdoFemale.Location = new System.Drawing.Point(179, 48);
+            this.rdoFemale.Name = "rdoFemale";
+            this.rdoFemale.Size = new System.Drawing.Size(57, 29);
+            this.rdoFemale.TabIndex = 6;
+            this.rdoFemale.Text = "女";
+            this.rdoFemale.UseVisualStyleBackColor = false;
+            // 
+            // rdoMale
+            // 
+            this.rdoMale.AutoSize = true;
+            this.rdoMale.BackColor = System.Drawing.Color.Transparent;
+            this.rdoMale.Checked = true;
+            this.rdoMale.Font = new System.Drawing.Font("微軟正黑體", 10F);
+            this.rdoMale.Location = new System.Drawing.Point(113, 48);
+            this.rdoMale.Name = "rdoMale";
+            this.rdoMale.Size = new System.Drawing.Size(57, 29);
+            this.rdoMale.TabIndex = 5;
+            this.rdoMale.TabStop = true;
+            this.rdoMale.Text = "男";
+            this.rdoMale.UseVisualStyleBackColor = false;
             // 
             // txtWeight
             // 
@@ -102,6 +172,7 @@
             // lblWeight
             // 
             this.lblWeight.AutoSize = true;
+            this.lblWeight.BackColor = System.Drawing.Color.Transparent;
             this.lblWeight.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.lblWeight.Location = new System.Drawing.Point(37, 164);
             this.lblWeight.Name = "lblWeight";
@@ -112,6 +183,7 @@
             // lblHeight
             // 
             this.lblHeight.AutoSize = true;
+            this.lblHeight.BackColor = System.Drawing.Color.Transparent;
             this.lblHeight.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.lblHeight.Location = new System.Drawing.Point(37, 106);
             this.lblHeight.Name = "lblHeight";
@@ -135,6 +207,39 @@
             this.grpOutput.TabStop = false;
             this.grpOutput.Text = "分析報告";
             // 
+            // lblAdvice
+            // 
+            this.lblAdvice.AutoSize = true;
+            this.lblAdvice.BackColor = System.Drawing.Color.Transparent;
+            this.lblAdvice.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.lblAdvice.Location = new System.Drawing.Point(26, 222);
+            this.lblAdvice.Name = "lblAdvice";
+            this.lblAdvice.Size = new System.Drawing.Size(121, 30);
+            this.lblAdvice.TabIndex = 11;
+            this.lblAdvice.Text = "體重建議 :";
+            // 
+            // lblIdeal
+            // 
+            this.lblIdeal.AutoSize = true;
+            this.lblIdeal.BackColor = System.Drawing.Color.Transparent;
+            this.lblIdeal.Font = new System.Drawing.Font("微軟正黑體", 12F);
+            this.lblIdeal.Location = new System.Drawing.Point(26, 164);
+            this.lblIdeal.Name = "lblIdeal";
+            this.lblIdeal.Size = new System.Drawing.Size(165, 30);
+            this.lblIdeal.TabIndex = 10;
+            this.lblIdeal.Text = "理想體重(kg) :";
+            // 
+            // lblBMR
+            // 
+            this.lblBMR.AutoSize = true;
+            this.lblBMR.BackColor = System.Drawing.Color.Transparent;
+            this.lblBMR.Font = new System.Drawing.Font("微軟正黑體", 12F);
+            this.lblBMR.Location = new System.Drawing.Point(26, 106);
+            this.lblBMR.Name = "lblBMR";
+            this.lblBMR.Size = new System.Drawing.Size(214, 30);
+            this.lblBMR.TabIndex = 9;
+            this.lblBMR.Text = "基礎代謝率(BMR) :";
+            // 
             // lblResult
             // 
             this.lblResult.BackColor = System.Drawing.Color.White;
@@ -149,6 +254,7 @@
             // lblBMI
             // 
             this.lblBMI.AutoSize = true;
+            this.lblBMI.BackColor = System.Drawing.Color.Transparent;
             this.lblBMI.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.lblBMI.Location = new System.Drawing.Point(26, 49);
             this.lblBMI.Name = "lblBMI";
@@ -156,108 +262,12 @@
             this.lblBMI.TabIndex = 2;
             this.lblBMI.Text = "身體質量指數(BMI)";
             // 
-            // rdoMale
-            // 
-            this.rdoMale.AutoSize = true;
-            this.rdoMale.Checked = true;
-            this.rdoMale.Font = new System.Drawing.Font("微軟正黑體", 10F);
-            this.rdoMale.Location = new System.Drawing.Point(113, 48);
-            this.rdoMale.Name = "rdoMale";
-            this.rdoMale.Size = new System.Drawing.Size(57, 29);
-            this.rdoMale.TabIndex = 5;
-            this.rdoMale.TabStop = true;
-            this.rdoMale.Text = "男";
-            this.rdoMale.UseVisualStyleBackColor = true;
-            // 
-            // rdoFemale
-            // 
-            this.rdoFemale.AutoSize = true;
-            this.rdoFemale.Font = new System.Drawing.Font("微軟正黑體", 10F);
-            this.rdoFemale.Location = new System.Drawing.Point(179, 48);
-            this.rdoFemale.Name = "rdoFemale";
-            this.rdoFemale.Size = new System.Drawing.Size(57, 29);
-            this.rdoFemale.TabIndex = 6;
-            this.rdoFemale.Text = "女";
-            this.rdoFemale.UseVisualStyleBackColor = true;
-            // 
-            // lblGender
-            // 
-            this.lblGender.AutoSize = true;
-            this.lblGender.Font = new System.Drawing.Font("微軟正黑體", 12F);
-            this.lblGender.Location = new System.Drawing.Point(37, 48);
-            this.lblGender.Name = "lblGender";
-            this.lblGender.Size = new System.Drawing.Size(61, 30);
-            this.lblGender.TabIndex = 7;
-            this.lblGender.Text = "性別";
-            // 
-            // lblAge
-            // 
-            this.lblAge.AutoSize = true;
-            this.lblAge.Font = new System.Drawing.Font("微軟正黑體", 12F);
-            this.lblAge.Location = new System.Drawing.Point(263, 48);
-            this.lblAge.Name = "lblAge";
-            this.lblAge.Size = new System.Drawing.Size(61, 30);
-            this.lblAge.TabIndex = 8;
-            this.lblAge.Text = "年齡";
-            // 
-            // lblBMR
-            // 
-            this.lblBMR.AutoSize = true;
-            this.lblBMR.Font = new System.Drawing.Font("微軟正黑體", 12F);
-            this.lblBMR.Location = new System.Drawing.Point(26, 106);
-            this.lblBMR.Name = "lblBMR";
-            this.lblBMR.Size = new System.Drawing.Size(214, 30);
-            this.lblBMR.TabIndex = 9;
-            this.lblBMR.Text = "基礎代謝率(BMR) :";
-            // 
-            // lblIdeal
-            // 
-            this.lblIdeal.AutoSize = true;
-            this.lblIdeal.Font = new System.Drawing.Font("微軟正黑體", 12F);
-            this.lblIdeal.Location = new System.Drawing.Point(26, 164);
-            this.lblIdeal.Name = "lblIdeal";
-            this.lblIdeal.Size = new System.Drawing.Size(165, 30);
-            this.lblIdeal.TabIndex = 10;
-            this.lblIdeal.Text = "理想體重(kg) :";
-            // 
-            // numAge
-            // 
-            this.numAge.Location = new System.Drawing.Point(337, 46);
-            this.numAge.Maximum = new decimal(new int[] {
-            140,
-            0,
-            0,
-            0});
-            this.numAge.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.numAge.Name = "numAge";
-            this.numAge.Size = new System.Drawing.Size(114, 34);
-            this.numAge.TabIndex = 9;
-            this.numAge.Value = new decimal(new int[] {
-            20,
-            0,
-            0,
-            0});
-            // 
-            // lblAdvice
-            // 
-            this.lblAdvice.AutoSize = true;
-            this.lblAdvice.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.lblAdvice.Location = new System.Drawing.Point(26, 222);
-            this.lblAdvice.Name = "lblAdvice";
-            this.lblAdvice.Size = new System.Drawing.Size(121, 30);
-            this.lblAdvice.TabIndex = 11;
-            this.lblAdvice.Text = "體重建議 :";
-            // 
             // frmBMI
             // 
             this.AcceptButton = this.btnRun;
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(549, 656);
             this.Controls.Add(this.grpOutput);
             this.Controls.Add(this.grpInput);
@@ -267,9 +277,9 @@
             this.Load += new System.EventHandler(this.frmBMI_Load);
             this.grpInput.ResumeLayout(false);
             this.grpInput.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numAge)).EndInit();
             this.grpOutput.ResumeLayout(false);
             this.grpOutput.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numAge)).EndInit();
             this.ResumeLayout(false);
 
         }
