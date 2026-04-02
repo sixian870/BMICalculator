@@ -66,7 +66,7 @@
             this.grpInput.Font = new System.Drawing.Font("微軟正黑體", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.grpInput.Location = new System.Drawing.Point(27, 46);
             this.grpInput.Name = "grpInput";
-            this.grpInput.Size = new System.Drawing.Size(491, 254);
+            this.grpInput.Size = new System.Drawing.Size(491, 244);
             this.grpInput.TabIndex = 0;
             this.grpInput.TabStop = false;
             this.grpInput.Text = "資料輸入";
@@ -86,7 +86,7 @@
             0});
             this.numAge.Name = "numAge";
             this.numAge.Size = new System.Drawing.Size(114, 34);
-            this.numAge.TabIndex = 9;
+            this.numAge.TabIndex = 3;
             this.numAge.Value = new decimal(new int[] {
             20,
             0,
@@ -123,7 +123,7 @@
             this.rdoFemale.Location = new System.Drawing.Point(179, 48);
             this.rdoFemale.Name = "rdoFemale";
             this.rdoFemale.Size = new System.Drawing.Size(57, 29);
-            this.rdoFemale.TabIndex = 6;
+            this.rdoFemale.TabIndex = 2;
             this.rdoFemale.Text = "女";
             this.rdoFemale.UseVisualStyleBackColor = false;
             // 
@@ -136,7 +136,7 @@
             this.rdoMale.Location = new System.Drawing.Point(113, 48);
             this.rdoMale.Name = "rdoMale";
             this.rdoMale.Size = new System.Drawing.Size(57, 29);
-            this.rdoMale.TabIndex = 5;
+            this.rdoMale.TabIndex = 1;
             this.rdoMale.TabStop = true;
             this.rdoMale.Text = "男";
             this.rdoMale.UseVisualStyleBackColor = false;
@@ -147,7 +147,7 @@
             this.txtWeight.Location = new System.Drawing.Point(166, 164);
             this.txtWeight.Name = "txtWeight";
             this.txtWeight.Size = new System.Drawing.Size(139, 34);
-            this.txtWeight.TabIndex = 4;
+            this.txtWeight.TabIndex = 5;
             // 
             // txtHeight
             // 
@@ -155,7 +155,7 @@
             this.txtHeight.Location = new System.Drawing.Point(166, 106);
             this.txtHeight.Name = "txtHeight";
             this.txtHeight.Size = new System.Drawing.Size(139, 34);
-            this.txtHeight.TabIndex = 3;
+            this.txtHeight.TabIndex = 4;
             // 
             // btnRun
             // 
@@ -164,7 +164,7 @@
             this.btnRun.Location = new System.Drawing.Point(337, 106);
             this.btnRun.Name = "btnRun";
             this.btnRun.Size = new System.Drawing.Size(114, 92);
-            this.btnRun.TabIndex = 2;
+            this.btnRun.TabIndex = 6;
             this.btnRun.Text = "計算";
             this.btnRun.UseVisualStyleBackColor = false;
             this.btnRun.Click += new System.EventHandler(this.btnRun_Click);
@@ -202,7 +202,7 @@
             this.grpOutput.Font = new System.Drawing.Font("微軟正黑體", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.grpOutput.Location = new System.Drawing.Point(27, 317);
             this.grpOutput.Name = "grpOutput";
-            this.grpOutput.Size = new System.Drawing.Size(491, 293);
+            this.grpOutput.Size = new System.Drawing.Size(491, 292);
             this.grpOutput.TabIndex = 1;
             this.grpOutput.TabStop = false;
             this.grpOutput.Text = "分析報告";
@@ -212,7 +212,7 @@
             this.lblAdvice.AutoSize = true;
             this.lblAdvice.BackColor = System.Drawing.Color.Transparent;
             this.lblAdvice.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.lblAdvice.Location = new System.Drawing.Point(26, 222);
+            this.lblAdvice.Location = new System.Drawing.Point(26, 223);
             this.lblAdvice.Name = "lblAdvice";
             this.lblAdvice.Size = new System.Drawing.Size(121, 30);
             this.lblAdvice.TabIndex = 11;
@@ -223,7 +223,7 @@
             this.lblIdeal.AutoSize = true;
             this.lblIdeal.BackColor = System.Drawing.Color.Transparent;
             this.lblIdeal.Font = new System.Drawing.Font("微軟正黑體", 12F);
-            this.lblIdeal.Location = new System.Drawing.Point(26, 164);
+            this.lblIdeal.Location = new System.Drawing.Point(26, 165);
             this.lblIdeal.Name = "lblIdeal";
             this.lblIdeal.Size = new System.Drawing.Size(165, 30);
             this.lblIdeal.TabIndex = 10;
@@ -234,7 +234,7 @@
             this.lblBMR.AutoSize = true;
             this.lblBMR.BackColor = System.Drawing.Color.Transparent;
             this.lblBMR.Font = new System.Drawing.Font("微軟正黑體", 12F);
-            this.lblBMR.Location = new System.Drawing.Point(26, 106);
+            this.lblBMR.Location = new System.Drawing.Point(26, 107);
             this.lblBMR.Name = "lblBMR";
             this.lblBMR.Size = new System.Drawing.Size(214, 30);
             this.lblBMR.TabIndex = 9;
@@ -245,7 +245,7 @@
             this.lblResult.BackColor = System.Drawing.Color.White;
             this.lblResult.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblResult.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lblResult.Location = new System.Drawing.Point(250, 49);
+            this.lblResult.Location = new System.Drawing.Point(250, 50);
             this.lblResult.Name = "lblResult";
             this.lblResult.Size = new System.Drawing.Size(201, 30);
             this.lblResult.TabIndex = 3;
@@ -256,7 +256,7 @@
             this.lblBMI.AutoSize = true;
             this.lblBMI.BackColor = System.Drawing.Color.Transparent;
             this.lblBMI.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.lblBMI.Location = new System.Drawing.Point(26, 49);
+            this.lblBMI.Location = new System.Drawing.Point(26, 50);
             this.lblBMI.Name = "lblBMI";
             this.lblBMI.Size = new System.Drawing.Size(218, 30);
             this.lblBMI.TabIndex = 2;
