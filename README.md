@@ -28,7 +28,7 @@
     * **性別**：預設為男性，可點選或使用鍵盤 **左右方向鍵** 切換。
     * **年齡**：預設為 20 歲，可直接輸入或透過 **上下方向鍵/點擊箭頭** 調整。
       
-      <img width="250" height="700" alt="螢幕擷取畫面 2026-04-01 222437" src="https://github.com/user-attachments/assets/cb6e075d-25e0-4bd5-a7af-49fe74728b16" />
+      <img width="250" alt="螢幕擷取畫面 2026-04-01 222437" src="https://github.com/user-attachments/assets/cb6e075d-25e0-4bd5-a7af-49fe74728b16" />
 
 2.  **數據輸入**：
     * 輸入 **身高 (cm)** 與 **體重 (kg)**。
@@ -37,7 +37,7 @@
     * 按 **`Tab 鍵** 就能在各個格子跟按鈕之間切換。
     * 彈出錯誤警告視窗時，可直接按下 **`Enter` 鍵** 快速關閉彈窗並返回修正。
 
-      <img width="250" height="700" alt="螢幕擷取畫面 2026-04-01 222521" src="https://github.com/user-attachments/assets/bf146e58-dcfd-4bd2-a2c4-3afbd2a52ea9" />
+      <img width="250" alt="螢幕擷取畫面 2026-04-01 222521" src="https://github.com/user-attachments/assets/bf146e58-dcfd-4bd2-a2c4-3afbd2a52ea9" />
 
 4.  **執行計算**：
     * 點擊「計算」按鈕，或在視窗任何位置按下 **`Enter` 鍵**。
@@ -46,7 +46,7 @@
     * 在分析報告區查看 BMI、BMR、理想體重及健康建議。
     * 以下是6種健康狀態變化：
       
-      <img width="110" height="700" alt="螢幕擷取畫面 2026-04-01 222557" src="https://github.com/user-attachments/assets/93965f32-76a5-454a-be60-0b22c0807bf6" /> <img width="110" height="700" alt="螢幕擷取畫面 2026-04-01 222615" src="https://github.com/user-attachments/assets/a3d19895-5dd0-4ddd-9b2d-46a531870b6d" /> <img width="110" height="700" alt="螢幕擷取畫面 2026-04-01 222646" src="https://github.com/user-attachments/assets/c2fd9473-7997-4d8d-82a1-fb2f749b6a8b" /> <img width="110" height="700" alt="螢幕擷取畫面 2026-04-01 222703" src="https://github.com/user-attachments/assets/5717115c-17b2-4eb5-9ead-7e9eb74d1afd" /> <img width="110" height="700" alt="螢幕擷取畫面 2026-04-01 222722" src="https://github.com/user-attachments/assets/f2dbf225-3c82-412f-8378-4f44b8d6d540" /> <img width="110" height="700" alt="螢幕擷取畫面 2026-04-01 222741" src="https://github.com/user-attachments/assets/c26d36c3-3252-4b8a-89b1-9255c356d885" />
+      <img width="110" alt="螢幕擷取畫面 2026-04-01 222557" src="https://github.com/user-attachments/assets/93965f32-76a5-454a-be60-0b22c0807bf6" /> <img width="110" alt="螢幕擷取畫面 2026-04-01 222615" src="https://github.com/user-attachments/assets/a3d19895-5dd0-4ddd-9b2d-46a531870b6d" /> <img width="110" alt="螢幕擷取畫面 2026-04-01 222646" src="https://github.com/user-attachments/assets/c2fd9473-7997-4d8d-82a1-fb2f749b6a8b" /> <img width="110" alt="螢幕擷取畫面 2026-04-01 222703" src="https://github.com/user-attachments/assets/5717115c-17b2-4eb5-9ead-7e9eb74d1afd" /> <img width="110" alt="螢幕擷取畫面 2026-04-01 222722" src="https://github.com/user-attachments/assets/f2dbf225-3c82-412f-8378-4f44b8d6d540" /> <img width="110" alt="螢幕擷取畫面 2026-04-01 222741" src="https://github.com/user-attachments/assets/c26d36c3-3252-4b8a-89b1-9255c356d885" />
 
 
 ## 公式參考
